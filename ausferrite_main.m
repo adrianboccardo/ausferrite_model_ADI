@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % AUSFERRITE MODEL
-% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com)
+% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com) 
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@
 % The model description is published at:
 % Boccardo, A.D., Dardati, P.M., Celentano, D.J. et al. A Microscale Model for 
 % Ausferritic Transformation of Austempered Ductile Irons. Metall Mater Trans A 48,
-% 524–535 (2017). https://doi.org/10.1007/s11661-016-3816-9
+% 524â€“535 (2017). https://doi.org/10.1007/s11661-016-3816-9
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % author: a.d. boccardo
@@ -117,7 +117,7 @@ k(5)=0.;              %Mo
 k(6)=0.03;            %Cr
 k(7)=0.;              %V
 
-%%--matrix chemical composition [w%] (yescas thesis) Tgamma=950ºC
+%%--matrix chemical composition [w%] (yescas thesis) Tgamma=950ÂºC
 %% ncs=64 [nodules/mm2] and sfset=1.
 %k=zeros(1,8);
 %cc=3.55;              %C
@@ -134,9 +134,9 @@ t=3600;      %total time [s]
 deltat=1;    %delta time [s]
 
 %%--heat treatment temperature
-tgamma=880; %temperature [ºC]
-ta=300;     %temperature [ºC]
-tenv=20;    %temperature [ºC]
+tgamma=880; %temperature [ÂºC]
+ta=300;     %temperature [ÂºC]
+tenv=20;    %temperature [ÂºC]
 
 %%--models
 %impediment
@@ -206,7 +206,7 @@ vfA=1-vfGr;
 xfpab=0.12; % percent of austenite film repect to ferrite platelet fraction (Gaude 2006)
 
 %austempered heat treatment temperature
-temp=ta; %temperature in ºC
+temp=ta; %temperature in ÂºC
 T=temp+273; %temperature in kelvin
 Tgeo=T;
 Tgeomax=450+273;     %[K] because subunit it too big and there is no experimental material to validate this value
