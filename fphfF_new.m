@@ -1,7 +1,21 @@
 function [vfAt,vfM]=fphfF_new(vfFp,vfAt,vfAf,vfAori,vfGr,k,tenv,vfA,msm,casename,t,cGammablockav,vfAb)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% final volume fraction
+% Final volume fraction
+% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com)
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <https://www.gnu.org/licenses/>.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -13,7 +27,7 @@ function [vfAt,vfM]=fphfF_new(vfFp,vfAt,vfAf,vfAori,vfGr,k,tenv,vfA,msm,casename
 % date: 07-08-2013
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% martensite start temperature [ºC]
+% martensite start temperature [ÂºC]
   [msfb]=msF(cGammablockav,k(2),k(3),k(4),0,k(5),k(6),k(7),0,0,0,0,0,0,msm);
   [msh]=msF(k(1),k(2),k(3),k(4),0,k(5),k(6),k(7),0,0,0,0,0,0,msm);
 
