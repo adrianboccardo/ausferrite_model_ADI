@@ -9,4 +9,4 @@ Ausferritic Transformation of Austempered Ductile Irons. Metall Mater Trans A 48
 -Main program: ausferrite_main.m
 
 -Subroutines: *F.m (Boccardo's functions)
-              *Bha.m (Bhadeshia's functions that were both translated from Fortran to Octave and modify by Boccardo)
+              *Bha.m (Bhadeshia's functions that were both translated from Fortran to Octave and modified by Boccardo)
