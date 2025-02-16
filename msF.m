@@ -1,6 +1,20 @@
 function [ms]=msF(c,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,n,mseq)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% function to evaluate martensite star
+% Martensite start temperature
+% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com)
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <https://www.gnu.org/licenses/>.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % c= carbon [w%]
@@ -17,7 +31,7 @@ function [ms]=msF(c,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,n,mseq)
 % nb= novio [w%]
 % ti= titanium [w%]
 % mseq= martensite star equation
-% ms= martensite star temperature [ºC]
+% ms= martensite star temperature [ÂºC]
 % msflag= flag to run end the program
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % autor: adrian boccardo
@@ -36,7 +50,7 @@ function [ms]=msF(c,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,n,mseq)
 % mseq=9 Y. X. Liu 1981
 % mseq=10 Yang, Jang, Bhadeshia and Suh 2011
 
-%-martensite start temperature [ºc]
+%-martensite start temperature [Âºc]
   msflag=0;
   if mseq==1
     ms=539-423.*c-30.4.*mn; %thesis sablich
@@ -57,7 +71,7 @@ function [ms]=msF(c,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,n,mseq)
   elseif mseq==9  
     ms=550-361.*c-39.*mn-35.*v-20.*cr-17.*ni-10.*cu-5.*mo-5.*w+16.*co+30.*al; %Y. X. Liu 1981
   elseif mseq==10 
-    ms=303-489.*c-9.1.*mn-17.6.*ni-9.2.*cr+21.3.*al+4.1.*si-19.4.*mo-1.*co-41.3.*cu-50.*nb-86.*ti-34.*v-13.*w;%Yang, Jang, Bhadeshia and Suh 2011
+    ms=303-489.*c-9.1.*mn-17.6.*ni-9.2.*cr+21.3.*al+4.1.*si-19.4.*mo-1.*co-41.3.*cu-50.*nb-86.*ti-34.*v-13.*w; %Yang, Jang, Bhadeshia and Suh 2011
   else
     disp('wrong in msF !!!')
 	return
