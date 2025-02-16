@@ -1,0 +1,1 @@
+# ausferrite_model_ADI
