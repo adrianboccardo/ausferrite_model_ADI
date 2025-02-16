@@ -1,0 +1,8 @@
+This model evaluates the ausferrite kinetics according to boccardo's model. The final volume fraction (at ambient temperature) is predicted by it model.
+
+-Main program: ausferrite_main.m
+
+-Subroutines: *F.m (Boccardo's functions)
+              *Bha.m (Bhadeshia's functions that were both translated from Fortran to Octave and modify by Boccardo)
+
+
