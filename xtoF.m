@@ -1,9 +1,29 @@
 function [xTo]=xtoF(T,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,xcaeq)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% function to evaluate the carbon concentration equilibrium
-% of austenite whit graphite (nodular cast iron)
+%
+% Carbon concentration of austenite
+% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com)
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <https://www.gnu.org/licenses/>.
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Ta= austenization temperature [ºC]
+%
+% This function to evaluate the carbon concentration equilibrium
+% of austenite whit graphite (nodular cast iron)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ta= austenization temperature [ÂºC]
 % si= silicon [w%]
 % mn= manganese [w%]
 % ni= nickel [w%]
