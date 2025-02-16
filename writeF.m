@@ -1,8 +1,21 @@
 function [wrong]=writeF(vfGr,vfA,plength,rA,t,deltat,imeff,imeffep,typn,tni,tnf,nucmod,ttn,typeplot,k,ncs,tgamma,ta,tenv,fphp,msm,plotyn,casename)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% white
+% White
+% Copyright (C) 2015 Adrian Boccardo (adrianboccardo@gmail.com)
 %
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <https://www.gnu.org/licenses/>.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -179,15 +192,15 @@ function [wrong]=writeF(vfGr,vfA,plength,rA,t,deltat,imeff,imeffep,typn,tni,tnf,
     fprintf(fid, "\n");
     fputs (fid, "  * austenitization temperature: ");
     fprintf(fid, "%g", tgamma);
-    fputs (fid, "[ºC]");
+    fputs (fid, "[ÂºC]");
     fprintf(fid, "\n");
     fputs (fid, "  * austempered temperature: ");
     fprintf(fid, "%g", ta);
-    fputs (fid, "[ºC]");
+    fputs (fid, "[ÂºC]");
     fprintf(fid, "\n");
     fputs (fid, "  * ambient temperature: ");
     fprintf(fid, "%g", tenv);
-    fputs (fid, "[ºC]");
+    fputs (fid, "[ÂºC]");
     fprintf(fid, "\n");
     fprintf(fid, "\n");
 
