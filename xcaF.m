@@ -16,7 +16,7 @@ function [xca]=xcaF(Ta,si,mn,ni,cu,mo,cr,v,w,co,al,nb,ti,xcaeq)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This function to evaluate the carbon concentration equilibrium
